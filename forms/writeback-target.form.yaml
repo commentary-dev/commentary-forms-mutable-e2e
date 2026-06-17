@@ -1,0 +1,68 @@
+commentaryForm: 1
+id: mutable-writeback-target
+title: Mutable writeback target
+description: Compact form used by staging and release writeback e2e checks.
+schema:
+  type: object
+  additionalProperties: false
+  required:
+    - runId
+    - reviewerEmail
+    - status
+  properties:
+    runId:
+      type: string
+      title: Run id
+      minLength: 6
+      maxLength: 120
+      fieldKind: text
+    reviewerEmail:
+      type: string
+      title: Reviewer email
+      format: email
+      fieldKind: email
+    status:
+      type: string
+      title: Status
+      enum:
+        - pass
+        - investigate
+        - fail
+      fieldKind: radio
+    notes:
+      type: string
+      title: Notes
+      maxLength: 500
+      fieldKind: textarea
+ui:
+  fields:
+    runId:
+      field: runId
+      label: Run id
+    reviewerEmail:
+      field: reviewerEmail
+      label: Reviewer email
+      kind: email
+    status:
+      field: status
+      label: Status
+      kind: radio
+    notes:
+      field: notes
+      label: Notes
+      kind: textarea
+submit:
+  destinations:
+    - kind: commentary
+      enabled: true
+    - kind: github-pr
+      enabled: true
+      config:
+        owner: commentary-dev
+        repo: commentary-forms-mutable-e2e
+        branchPrefix: e2e/forms-
+        pathPrefix: results/
+source:
+  kind: github-backed
+  path: forms/writeback-target.form.yaml
+
