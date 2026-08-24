@@ -1,0 +1,68 @@
+{
+  "commentaryFormResult": 1,
+  "form": {
+    "id": "ib-hJyRUGufn8zevdjWLWhWqizA8Wkb4",
+    "referenceId": "github.c6731c3ce34dc773ca8a66b91ea3b130",
+    "sourcePath": "forms/writeback-target.form.yaml",
+    "versionId": "jxHZwUMOaIWrdvGIMyH-yerCX3u_iK34",
+    "contractHash": "fnv1a32:cec34c2b",
+    "source": {
+      "provider": "github",
+      "owner": "commentary-dev",
+      "repo": "commentary-forms-mutable-e2e",
+      "ref": "main",
+      "contentHash": "c3140adef1f9c90ccd4a6a52391f134585253c5a441264ea5ff9d7b8277fd136"
+    }
+  },
+  "submission": {
+    "id": "vxOxxAzz8Le-VoUp8pAjMV45799_3QIe",
+    "externalId": "vxoxxazz8le-voup8pajmv45799_3qie",
+    "submittedAt": "2026-08-24T20:53:47.607Z",
+    "origin": "web"
+  },
+  "submitter": {
+    "mode": "identified",
+    "login": "srulyt",
+    "viewerId": "playwright-viewer",
+    "providerAccountId": "9MlM6HZpFPjWH6WE0YCOOsK8qyNyMq2u",
+    "agentAlias": null,
+    "clientName": "github-backed-review-form"
+  },
+  "values": {
+    "notes": "Release staging Forms GitHub writeback e2e.",
+    "runId": "forms-writeback-e2e-1787604826539",
+    "status": "pass",
+    "reviewerEmail": "forms-e2e@example.com"
+  },
+  "validation": {
+    "valid": true,
+    "diagnostics": []
+  },
+  "sourceContext": {
+    "kind": "markdown_review",
+    "filePath": "docs/writeback-target.md",
+    "branchRef": "main",
+    "repository": {
+      "repo": "commentary-forms-mutable-e2e",
+      "owner": "commentary-dev",
+      "provider": "github"
+    },
+    "sourceForm": {
+      "ref": "main",
+      "path": "forms/writeback-target.form.yaml",
+      "repo": "commentary-forms-mutable-e2e",
+      "owner": "commentary-dev",
+      "provider": "github",
+      "contentHash": "c3140adef1f9c90ccd4a6a52391f134585253c5a441264ea5ff9d7b8277fd136",
+      "contractHash": "fnv1a32:cec34c2b"
+    },
+    "formInstanceId": "forms-writeback-e2e-1787604826539",
+    "resultVisibility": "git_write_access",
+    "resultViewerViewerIds": [
+      "playwright-viewer"
+    ],
+    "resultViewerProviderAccountIds": [
+      "9MlM6HZpFPjWH6WE0YCOOsK8qyNyMq2u"
+    ]
+  }
+}
